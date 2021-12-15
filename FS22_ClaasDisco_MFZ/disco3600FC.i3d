@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="disco3600FC" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="8" filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
+    <File fileId="9" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
+    <File fileId="20" filename="$data/shared/assets/assetLibraryStickers_diffuse.png"/>
+    <File fileId="10" filename="$data/shared/clearPlastic_diffuse.png"/>
+    <File fileId="13" filename="$data/shared/default_normal.png"/>
+    <File fileId="18" filename="$data/shared/window_diffuse.png"/>
+    <File fileId="19" filename="$data/shared/window_specular.png"/>
+    <File fileId="16" filename="disco3600FCDecals2_diffuse.png"/>
+    <File fileId="15" filename="disco3600FCDecals_diffuse.png"/>
+    <File fileId="11" filename="disco3600FC_light_normal.png"/>
+    <File fileId="12" filename="disco3600FC_light_specular.png"/>
+    <File fileId="2" filename="disco3600FC_normal.png"/>
+    <File fileId="3" filename="disco3600FC_specular.png"/>
+    <File fileId="17" filename="discoDecals_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="assetLibraryDecals_mat" materialId="4" customShaderId="4" customShaderVariation="Decal_colorMask">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="assetLibraryStickers_mat" materialId="5" customShaderId="4" customShaderVariation="Decal">
+      <Texture fileId="20"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="clearPlastic_mat" materialId="6" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.7379 0.7379 0.7379 2"/>
+      <CustomParameter name="colorMat1" value="0.9914 0.3993 0.0385 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="default_mat" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1" specularColor="0.494118 1 0.494118">
+      <Normalmap fileId="13"/>
+    </Material>
+    <Material name="disco3600FC_light_mat" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="staticLight">
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.7379 0.7379 0.7379 2"/>
+      <CustomParameter name="colorMat1" value="0.9914 0.3993 0.0385 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="disco3600FC_mat" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.2384 0.3186 0.0116 0"/>
+      <CustomParameter name="colorMat1" value="0.5 0.0328 0.0352 0"/>
+      <CustomParameter name="colorMat2" value="0.924 0.7155 0.06 0"/>
+      <CustomParameter name="colorMat3" value="0.08 0.08 0.08 5"/>
+      <CustomParameter name="colorMat4" value="0.027 0.025 0.023 5"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="disco3600FCDecals2_mat" materialId="10">
+      <Texture fileId="16"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="disco3600FCDecals_mat" materialId="11" customShaderId="4" customShaderVariation="Decal">
+      <Texture fileId="15"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="discoDecals_mat" materialId="12" alphaBlending="true" customShaderId="4" customShaderVariation="Decal">
+      <Texture fileId="17"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="lambert1" materialId="13" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="window_mat" materialId="14" alphaBlending="true" customShaderId="4">
+      <Texture fileId="18"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="19"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="disco3600FC.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="disco3600FC_main_component1" dynamic="true" compound="true" collisionMask="2109442" clipDistance="300" nodeId="50" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="disco3600FC_vis" clipDistance="300" nodeId="51" materialIds="9" castsShadows="true" receiveShadows="true" skinBindNodeIds="51 59 62 68 73 74 76 78 80 82 84 86 88 90 91 92 109 111 116 117 121 122 139 141 167 169">
+          <TransformGroup name="attachable" nodeId="52">
+            <TransformGroup name="attacherJoint" translation="7.43149e-17 0.561807 -0.665315" rotation="0 -90 0" nodeId="53"/>
+            <TransformGroup name="topReferenceNode" translation="0.0122865 1.1872 -0.653529" nodeId="54"/>
+            <TransformGroup name="ptoInputNode" translation="0 0.762872 0.0389738" rotation="0 180 0" nodeId="55"/>
+          </TransformGroup>
+          <TransformGroup name="mowerZRotJoint" translation="6.86646e-07 0.595866 0.50237" rotation="-32.2163 0 0" nodeId="56"/>
+          <TransformGroup name="mowerXRotJoint" translation="1.12322e-07 0.130625 0.199627" nodeId="57"/>
+          <TransformGroup name="movingParts" nodeId="58">
+            <TransformGroup name="mowerZRot" translation="-6.98404e-06 0.595866 0.50237" rotation="-90.0007 -59.0225 90.0006" clipDistance="300" nodeId="59">
+              <TransformGroup name="groundRefNode" translation="-0.202266 -0.573568 -7.73888e-06" rotation="30.9775 89.9996 0" nodeId="60"/>
+              <TransformGroup name="foldingLeftRot" translation="0.131294 -0.145676 -1.62487" rotation="-34.2455 -89.9995 0" nodeId="61">
+                <TransformGroup name="foldingLeft" translation="2.27374e-15 0 -1.27898e-15" clipDistance="300" nodeId="62">
+                  <Shape shapeId="3" name="screws_decals4" translation="1.62497 -0.577007 0.658105" rotation="90.0003 -86.732 -90.0006" clipDistance="50" nodeId="63" materialIds="4" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <TransformGroup name="foldingLeftJoint" translation="-2.84217e-16 7.10543e-17 0" rotation="176.732 0.000666342 180" nodeId="64"/>
+                  <TransformGroup name="foldingLeftJoint1" translation="0 -0.4 0.25" rotation="176.732 0.000666342 180" nodeId="65"/>
+                  <Shape shapeId="4" name="colPart05" translation="1.62486 -0.577007 0.658105" rotation="176.732 1.92808e-05 180" visibility="false" compoundChild="true" collisionMask="8194" density="0.001" nodeId="66" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="foldingRightRot" translation="0.131312 -0.145686 1.62486" rotation="-34.2457 -89.9996 0" nodeId="67">
+                <TransformGroup name="foldingRight" translation="4.26326e-15 3.55271e-16 -1.27898e-15" clipDistance="300" nodeId="68">
+                  <Shape shapeId="5" name="screws_decals3" translation="-1.62476 -0.576998 0.658104" rotation="89.999 -86.7318 -89.9992" clipDistance="50" nodeId="69" materialIds="4" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <TransformGroup name="foldingRightJoint" translation="-5.68434e-16 7.10543e-17 0" rotation="176.732 0.00059163 180" nodeId="70"/>
+                  <TransformGroup name="foldingRightJoint1" translation="0 -0.4 0.25" rotation="176.732 0.00059163 180" nodeId="71"/>
+                  <Shape shapeId="6" name="colPart06" translation="-1.62487 -0.576998 0.658104" rotation="176.732 -5.54304e-05 180" visibility="false" compoundChild="true" collisionMask="8194" density="0.001" nodeId="72" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="mowerXRot" translation="-0.499023 -0.243061 -5.22386e-06" rotation="-30.6119 -89.9997 0" clipDistance="300" nodeId="73">
+                <TransformGroup name="drum" translation="-1.54802e-06 0.182204 0.303836" rotation="170.468 0.000588627 180" clipDistance="300" nodeId="74"/>
+                <TransformGroup name="cutter08Rot" translation="1.43022 -0.0958208 -0.110586" rotation="92.6384 14.8497 -179.903" nodeId="75">
+                  <TransformGroup name="cutter08" translation="-1.59872e-16 -6.03961e-16 1.24345e-16" clipDistance="300" nodeId="76"/>
+                </TransformGroup>
+                <TransformGroup name="cutter07Rot" translation="1.01952 -0.0958184 -0.110591" rotation="93.7847 40.8989 -179.684" nodeId="77">
+                  <TransformGroup name="cutter07" translation="1.33227e-15 8.88178e-16 7.99361e-16" clipDistance="300" nodeId="78"/>
+                </TransformGroup>
+                <TransformGroup name="cutter06Rot" translation="0.608925 -0.0958159 -0.110595" rotation="92.7048 8.52761 -179.946" nodeId="79">
+                  <TransformGroup name="cutter06" translation="2.30926e-16 -3.55271e-17 -3.37508e-16" clipDistance="300" nodeId="80"/>
+                </TransformGroup>
+                <TransformGroup name="cutter05Rot" translation="0.198452 -0.0958134 -0.110599" rotation="92.9092 10.351 -179.934" nodeId="81">
+                  <TransformGroup name="cutter05" translation="2.26485e-16 3.19744e-16 1.42109e-16" clipDistance="300" nodeId="82"/>
+                </TransformGroup>
+                <TransformGroup name="cutter04Rot" translation="-0.212247 -0.0958109 -0.110603" rotation="92.7049 8.52768 -179.946" nodeId="83">
+                  <TransformGroup name="cutter04" translation="-1.24345e-16 -3.55271e-17 -4.08562e-16" clipDistance="300" nodeId="84"/>
+                </TransformGroup>
+                <TransformGroup name="cutter03Rot" translation="-0.622833 -0.0958084 -0.110607" rotation="93.133 -24.016 179.837" nodeId="85">
+                  <TransformGroup name="cutter03" translation="7.10543e-17 1.06581e-16 2.4869e-16" clipDistance="300" nodeId="86"/>
+                </TransformGroup>
+                <TransformGroup name="cutter02Rot" translation="-1.03343 -0.095806 -0.110611" rotation="92.694 6.81568 -179.957" nodeId="87">
+                  <TransformGroup name="cutter02" translation="4.66294e-16 5.32907e-16 -3.01981e-16" clipDistance="300" nodeId="88"/>
+                </TransformGroup>
+                <TransformGroup name="cutter01Rot" translation="-1.44413 -0.0958034 -0.110615" rotation="92.8161 -19.1854 179.872" nodeId="89">
+                  <TransformGroup name="cutter01" translation="-2.46914e-15 -7.10543e-17 2.66454e-16" clipDistance="300" nodeId="90"/>
+                </TransformGroup>
+                <TransformGroup name="damper01" translation="0.428193 0.523976 -0.0203729" rotation="-169.562 -0.111963 179.999" clipDistance="300" nodeId="91">
+                  <TransformGroup name="damper01Punch" translation="-1.26654e-14 -2.4869e-15 0.338933" clipDistance="300" nodeId="92"/>
+                  <TransformGroup name="damper01Joint" rotation="-10.0726 -0.110211 0.0193983" nodeId="93"/>
+                </TransformGroup>
+                <Shape shapeId="7" name="damper02Punch" translation="-0.426335 0.522841 -0.118898" rotation="-14.5043 -0.000574446 -0.000348368" clipDistance="50" nodeId="94" materialIds="9" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="damper02Ref" translation="-0.426335 0.522841 -0.118898" rotation="-14.8896 -0.025379 -0.000190061" nodeId="95"/>
+                <TransformGroup name="lights" translation="1.5477e-16 7.4607e-16 3.19744e-16" rotation="170.468 0.000588627 180" nodeId="96">
+                  <TransformGroup name="staticLights" translation="0 -1.77636e-17 0" nodeId="97">
+                    <Shape shapeId="8" name="frontlightStatic" translation="-1.53861e-07 -0.0943653 -0.219109" rotation="90 80.1019 90" clipDistance="35" nodeId="98" materialIds="6" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                    <Shape shapeId="9" name="Claas_TurnLight01_LeftBlinkStatic" translation="-1.53861e-07 -0.0943653 -0.219109" rotation="90 80.1019 90" clipDistance="35" nodeId="99" materialIds="6" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                    <Shape shapeId="10" name="Claas_TurnLight01_RightBlinkStatic" translation="-1.53861e-07 -0.0943653 -0.219109" rotation="90 80.1019 90" clipDistance="35" nodeId="100" materialIds="6" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  </TransformGroup>
+                  <Light name="frontLightLow" translation="-1.47731 0.768525 0.409953" rotation="155.102 -1.17448e-05 -180" clipDistance="75" nodeId="101" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="1" coneAngle="80" dropOff="3">
+                    <Light name="frontLightLow1" translation="-2.95431 1.59107e-07 -5.93795e-07" clipDistance="75" nodeId="102" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="1" coneAngle="80" dropOff="3"/>
+                  </Light>
+                  <Light name="turnLightLeftFront" translation="1.477 0.768525 0.409953" rotation="170.065 -4.9254 -179.138" clipDistance="75" nodeId="103" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="120" dropOff="3"/>
+                  <Light name="turnLightRightFront" translation="-1.47731 0.768525 0.409953" rotation="170.065 4.92538 179.138" clipDistance="75" nodeId="104" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="120" dropOff="3"/>
+                  <TransformGroup name="visuals" translation="0 -1.77636e-17 0" nodeId="105">
+                    <Shape shapeId="11" name="visualsStatic" translation="-1.53861e-07 -0.0943653 -0.219109" rotation="90 80.1019 90" clipDistance="35" nodeId="106" materialIds="8" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  </TransformGroup>
+                </TransformGroup>
+                <Shape shapeId="12" name="screws_decals1" translation="0.000105855 -0.129348 0.200456" rotation="-90.0904 -89.6343 90.09" clipDistance="50" nodeId="107" materialIds="4" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <TransformGroup name="ptos" translation="-2.69178e-06 -0.129348 0.200456" rotation="-179.634 0.000576705 180" nodeId="108">
+                  <TransformGroup name="pto02" translation="1.38004 0.762958 0.314506" rotation="2.56132e-06 -90 0" clipDistance="300" nodeId="109">
+                    <TransformGroup name="pto01Ref" translation="-2.28882e-07 6.67555e-08 0.639961" rotation="179.992 2.82635e-05 -180" nodeId="110"/>
+                  </TransformGroup>
+                  <TransformGroup name="pto04" translation="-1.42728 0.762958 0.314505" rotation="3.82773e-05 90 0" clipDistance="300" nodeId="111">
+                    <TransformGroup name="pto03Ref" translation="9.21133e-08 3.36884e-07 0.50427" rotation="3.82773e-05 180 0" nodeId="112"/>
+                  </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="effects" translation="-1.1422e-06 -0.130334 0.0459101" rotation="-179.634 0.000576705 180" nodeId="113">
+                  <Shape shapeId="13" name="mowerEffect" translation="3.31614e-17 0.00710614 -0.188425" clipDistance="100" nodeId="114" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <Shape shapeId="14" name="colPArt" translation="1.91937e-06 0.626669 -0.112979" rotation="-179.634 -6.0792e-05 180" visibility="false" compoundChild="true" collisionMask="8194" density="0.001" nodeId="115" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                <TransformGroup name="bolts1" translation="-2.5411e-23 -1.77636e-17 0" clipDistance="300" nodeId="116"/>
+                <TransformGroup name="bolts2" translation="-1.46321 0.629627 -0.228714" clipDistance="300" nodeId="117"/>
+                <Shape shapeId="15" name="sticker1_decals" translation="8.19659e-06 0.4633 -0.305706" rotation="89.9994 59.3881 89.9993" clipDistance="30" nodeId="118" materialIds="11" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="16" name="sticker2_decals" translation="-2.5411e-23 -1.77636e-17 0" clipDistance="30" nodeId="119" materialIds="11" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="17" name="sticker3_decals" translation="0.000105855 -0.129348 0.200456" rotation="-90.0904 -89.6343 90.09" clipDistance="30" nodeId="120" materialIds="10" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </TransformGroup>
+              <TransformGroup name="damper02" translation="0.0411666 -0.0282889 -0.426244" rotation="165.476 -89.9756 149.023" clipDistance="300" nodeId="121">
+                <TransformGroup name="saveLock" translation="-0.00258378 0.00132557 0.141524" clipDistance="300" nodeId="122"/>
+                <TransformGroup name="damper02PunchRef" translation="8.01085e-05 -0.00128336 0.435687" rotation="0.385345 0.0240124 0.00622074" nodeId="123"/>
+                <TransformGroup name="damper02Joint" rotation="165.476 -0.0240102 -179.994" nodeId="124"/>
+              </TransformGroup>
+              <TransformGroup name="damper01Ref" translation="0.0409377 -0.025068 0.427527" rotation="-169.927 89.8871 149.022" nodeId="125"/>
+              <TransformGroup name="spring01Ref" translation="-0.141862 -0.186609 0.270939" rotation="90.4287 89.9997 0" nodeId="126"/>
+              <TransformGroup name="spring02Ref" translation="-0.141865 -0.186607 -0.270952" rotation="90.4287 89.9995 0" nodeId="127"/>
+              <TransformGroup name="spring03Ref" translation="-0.029218 -0.050517 0.223779" rotation="91.006 89.9997 0" nodeId="128"/>
+              <TransformGroup name="spring04Ref" translation="-0.0292204 -0.0505156 -0.223795" rotation="91.0061 89.9996 0" nodeId="129"/>
+              <TransformGroup name="visuals" translation="1.18376e-13 9.07292e-13 -7.67069e-06" rotation="90 90 0" nodeId="130">
+                <Shape shapeId="18" name="screws_decals2" translation="-0.000112345 -0.73741 0.252307" rotation="-90.0002 30.9775 -90.0004" clipDistance="50" nodeId="131" materialIds="4" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="19" name="decals1" translation="-3.79879e-06 -0.73741 0.252307" rotation="-90.0002 30.9775 -90.0004" clipDistance="30" nodeId="132" materialIds="12" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </TransformGroup>
+              <TransformGroup name="mowerXRotRefFrame" translation="-0.499023 -0.243061 -5.22386e-06" rotation="21.0795 89.9997 0" nodeId="133"/>
+              <Shape shapeId="20" name="spring01" translation="-0.140418 0.00644199 0.270939" rotation="90.4287 89.9997 0" clipDistance="50" nodeId="134" materialIds="9" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="21" name="spring02" translation="-0.140421 0.0064437 -0.270953" rotation="90.4287 89.9995 0" clipDistance="50" nodeId="135" materialIds="9" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="22" name="spring03" translation="-0.026767 0.0890631 0.223779" rotation="91.006 89.9997 0" clipDistance="50" nodeId="136" materialIds="9" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="23" name="spring04" translation="-0.0267693 0.0890644 -0.223794" rotation="91.0061 89.9996 0" clipDistance="50" nodeId="137" materialIds="9" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="ptos" translation="-0.73741 -0.252307 -3.87648e-06" rotation="30.9775 89.9996 0" nodeId="138">
+                <TransformGroup name="pto01" translation="0.121427 0.762872 0.314506" rotation="-0.00796343 90 0" clipDistance="300" nodeId="139">
+                  <TransformGroup name="pto02Ref" translation="2.65063e-07 3.27201e-05 0.382673" rotation="179.992 -2.82635e-05 -180" nodeId="140"/>
+                </TransformGroup>
+                <TransformGroup name="pto03" translation="-0.122677 0.762958 0.314505" rotation="0 -90 0" clipDistance="300" nodeId="141">
+                  <TransformGroup name="pto04Ref" translation="-2.21993e-07 -1.05456e-15 0.704921" rotation="3.82773e-05 180 0" nodeId="142"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="groundAdjustment" translation="-0.980403 0.109061 -1.37375e-05" rotation="30.9775 89.9996 0" nodeId="143">
+                <TransformGroup name="groundAdjustmentRaycast" translation="-2.84603e-21 0 2.27475e-26" nodeId="144"/>
+                <TransformGroup name="groundAdjustmentNode" translation="-3.93023e-21 -0.18118 3.20533e-26" nodeId="145">
+                  <TransformGroup name="mowerXRotRef" translation="-9.61425e-06 0.124558 -0.07012" rotation="-179.634 -0.000596614 180" nodeId="146"/>
+                </TransformGroup>
+              </TransformGroup>
+              <Shape shapeId="24" name="colPart01" translation="0.0226615 -0.117742 -7.47945e-06" rotation="30.9775 89.9996 0" visibility="false" compoundChild="true" collisionMask="8194" density="0.001" nodeId="147" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="mowerZRotRefFrame" translation="6.86646e-07 0.595866 0.50237" rotation="-90.0007 -59.0225 90.0006" nodeId="148"/>
+          </TransformGroup>
+          <TransformGroup name="ai" translation="0 0 0.154549" nodeId="149">
+            <TransformGroup name="aiMarkerLeft" translation="1.7 0 1.05144" nodeId="150"/>
+            <TransformGroup name="aiMarkerRight" translation="-1.7 0 1.05144" nodeId="151"/>
+            <TransformGroup name="aiMarkerBack" translation="0 0 -0.46103" nodeId="152"/>
+            <TransformGroup name="aiCollisionTrigger" translation="0 0.519197 0" nodeId="153"/>
+          </TransformGroup>
+          <TransformGroup name="workAreas" translation="0 0 0.154549" nodeId="154">
+            <TransformGroup name="areaStart" translation="1.8 0 0.514452" nodeId="155"/>
+            <TransformGroup name="areaWidth" translation="-1.8 0 0.514452" nodeId="156"/>
+            <TransformGroup name="areaHeight" translation="1.8 0 0.201898" nodeId="157"/>
+            <TransformGroup name="areaDropStart" translation="0.636 0 -0.328767" nodeId="158"/>
+            <TransformGroup name="areaDropWidth" translation="-0.636 0 -0.328767" nodeId="159"/>
+            <TransformGroup name="areaDropHeight" translation="0.636 0 -0.71071" nodeId="160"/>
+          </TransformGroup>
+          <TransformGroup name="visuals" nodeId="161">
+            <Shape shapeId="25" name="glass" rotation="0 90 0" clipDistance="200" nodeId="162" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="26" name="decals" rotation="3.79152e-22 90 0" clipDistance="30" nodeId="163" materialIds="12" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="27" name="sticker_decals" rotation="0 90 0" clipDistance="50" nodeId="164" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="28" name="screws_decals" translation="-0.000108547 0 0" rotation="0 90 0" clipDistance="50" nodeId="165" materialIds="4" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="arm01Rot" translation="0.41821 0.715702 -0.544226" rotation="-25.6029 74.6579 0" nodeId="166">
+              <TransformGroup name="arm01" translation="0 -7.10543e-17 0" clipDistance="300" nodeId="167"/>
+            </TransformGroup>
+            <TransformGroup name="arm02Rot" translation="-0.41821 0.715702 -0.544226" rotation="-25.603 -74.658 0" nodeId="168">
+              <TransformGroup name="arm02" translation="7.10543e-17 -7.10543e-17 7.10543e-17" clipDistance="300" nodeId="169"/>
+            </TransformGroup>
+            <Shape shapeId="29" name="unused4" rotation="0 90 0" visibility="false" clipDistance="300" nodeId="170" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="rootJoint" nodeId="171"/>
+        </Shape>
+        <TransformGroup name="skinnedMesh" nodeId="172">
+          <Shape shapeId="30" name="skinnedCovers" clipDistance="300" nodeId="173" materialIds="9" castsShadows="true" receiveShadows="true" skinBindNodeIds="171 70 64 71 65 93 124"/>
+        </TransformGroup>
+      </Shape>
+      <Shape shapeId="31" name="disco3600FC_mowerPart_component2" translation="-0.000224873 0.0816442 0.19297" dynamic="true" compound="true" collisionMask="2109442" clipDistance="300" nodeId="174" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <TransformGroup name="mowerZRotRef" translation="-1.57828 0.514222 0.30939" rotation="-90.0007 -59.0225 90.0006" nodeId="175"/>
+        <TransformGroup name="groundAdjustmentRefNodeRot" translation="0.000224873 -0.0816442 0.4312" rotation="0 -0.000658529 0.000182378" nodeId="176">
+          <TransformGroup name="groundAdjustmentRefNode" translation="-1.0842e-21 -8.83524e-30 -7.10543e-17" nodeId="177"/>
+        </TransformGroup>
+        <TransformGroup name="collisions" visibility="false" nodeId="178">
+          <Shape shapeId="32" name="colPart01" translation="-1.30944 0 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="179" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="32" name="colPart02" translation="-0.681362 0 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="180" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="33" name="colPart03" translation="1.30971 0 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="181" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="32" name="colPart04" translation="0.681623 0 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="182" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+      </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="64">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="65">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="70">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="71">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="93">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="124">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="171">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="62">
+    <author>MFZ_Modding</author>
+    <version>1.0.1.1</version>
+    <title>
+        <en>CLAAS DISCO_MFZ</en>
+    </title>
+
+    <description>
+        <en>CLAAS DISCO Scheibenmähwerke</en>
+    </description>
+
+    <iconFilename>icon_disco.png</iconFilename>
+    <multiplayer supported="true" />
+
+    <storeItems>
+        <storeItem xmlFilename="disco1100C.xml"/>
+		<storeItem xmlFilename="disco3600FC.xml"/>
+    </storeItems>
+	
+</modDesc>
